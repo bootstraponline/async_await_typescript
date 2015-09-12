@@ -88,8 +88,8 @@ To solve this problem, babel is used to transpile the subset of ES6 unsupported 
 
 #### Credits
 
-- Thanks to @ivogabe for blogging about [using typescript with babel](http://dev.ivogabe.com/combine-typescript-with-babel/)
-- Thanks to @Deathspike for posting an [async example](https://github.com/Microsoft/TypeScript/issues/1664#issuecomment-129745146)
+- Thanks to [@ivogabe](https://github.com/ivogabe) for blogging about [using typescript with babel](http://dev.ivogabe.com/combine-typescript-with-babel/)
+- Thanks to [@Deathspike](https://github.com/Deathspike) for posting an [async example](https://github.com/Microsoft/TypeScript/issues/1664#issuecomment-129745146)
 
 --
 
