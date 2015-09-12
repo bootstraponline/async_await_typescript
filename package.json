@@ -1,0 +1,17 @@
+{
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "source-map-support": "^0.3.2"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.2.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-typescript": "^2.8.2",
+    "gulp-watch": "^4.3.5",
+    "typescript": "^1.6.0-beta"
+  }
+}

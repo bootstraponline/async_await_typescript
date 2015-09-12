@@ -1,0 +1,29 @@
+// Overwrite settings by placing them into your settings file.
+{
+	//-------- TypeScript configuration --------
+	
+	/*
+	VS Code uses TypeScript 1.5 in the box. If you want to use a newer version of TypeScript,
+	you can define the typescript.tsdk setting. The value of this setting is the absolute path
+	to the lib folder of a TypeScript installation. This folder contains the file tsserver.js
+	and the corresponding lib.*.d.ts files. Refer to this blog post for how to install the
+	nightly builds of TypeScript.
+	https://blogs.msdn.com/b/typescript/archive/2015/07/27/introducing-typescript-nightlies.aspx
+	https://code.visualstudio.com/Updates/
+	
+	To make it easier to try out the very latest in TypeScript, we're now publishing the TypeScript nightly npm package.  You can try this out using:
+
+	npm install -g typescript@next
+	
+	We've set this to update each night, and we timestamp each release.  You can see what version you're on with the --version commandline switch:
+	
+	C:\Users>tsc --version
+	message TS6029: Version 1.6.0-dev.20150727
+	http://blogs.msdn.com/b/typescript/archive/2015/07/27/introducing-typescript-nightlies.aspx?Redirected=true
+	*/
+	
+	"telemetry.enableCrashReporter": false,
+	
+	// Specifies the folder path containing the tsserver and lib*.d.ts files to use.
+	"typescript.tsdk": "node_modules/typescript/lib"
+}

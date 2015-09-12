@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"experimentalAsyncFunctions": true,
+		"inlineSourceMap": true,
+		"inlineSources": true,
+		"noImplicitAny": true,
+		"suppressImplicitAnyIndexErrors": false,
+		"target": "ES6",
+		"moduleResolution": "node"
+	},
+	"filesGlob": [
+        "./ts/**/*.ts"
+    ],
+	"exclude": [
+        "node_modules"
+	]
+}
