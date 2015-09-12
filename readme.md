@@ -5,6 +5,18 @@ using [TypeScript v1.6 beta](blogs.msdn.com/b/typescript/archive/2015/09/02/anno
 [Babel](http://babeljs.io/), [Node.js v4.0.0](https://nodejs.org/en/blog/release/v4.0.0/)
 and [Visual Studio Code v0.8.0](https://code.visualstudio.com/);
 
+```
+$ node lib/await.js
+1
+2
+3
+Error: throw error to showcase source map support.
+    at /source/await.ts:21:9
+    at [object Generator].next (native)
+    at step (/source/await.js:8:41)
+    at onfulfill (/source/await.js:5:43)
+ ```
+
 #### Install dependencies
 - Download [Visual Studio Code 0.8.0](https://code.visualstudio.com/Updates/) or later
 - `node -v` Ensure [node is v4.0.0](https://nodejs.org/en/) or later
