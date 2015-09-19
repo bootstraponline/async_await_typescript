@@ -5,8 +5,7 @@
 		"inlineSources": true,
 		"noImplicitAny": true,
 		"suppressImplicitAnyIndexErrors": false,
-		"target": "ES6",
-		"moduleResolution": "node"
+		"target": "ES6"
 	},
 	"filesGlob": [
         "./ts/**/*.ts"

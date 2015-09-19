@@ -12,6 +12,6 @@
     "gulp-sourcemaps": "^1.5.2",
     "gulp-typescript": "^2.8.2",
     "gulp-watch": "^4.3.5",
-    "typescript": "^1.6.0-beta"
+    "typescript": "^1.6.2"
   }
 }

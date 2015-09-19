@@ -1,8 +1,8 @@
 # async/await with TypeScript
 
 This example demonstrates the use of [async/await](https://github.com/lukehoban/ecmascript-asyncawait)
-using [TypeScript v1.6 beta](blogs.msdn.com/b/typescript/archive/2015/09/02/announcing-typescript-1-6-beta-react-jsx-better-error-checking-and-more.aspx),
-[Babel](http://babeljs.io/), [Node.js v4.0.0](https://nodejs.org/en/blog/release/v4.0.0/)
+using [TypeScript v1.6](http://blogs.msdn.com/b/typescript/archive/2015/09/02/announcing-typescript-1-6-beta-react-jsx-better-error-checking-and-more.aspx),
+[Babel](http://babeljs.io/), [Node.js v4](https://nodejs.org/en/blog/release/v4.0.0/)
 and [Visual Studio Code v0.8.0](https://code.visualstudio.com/);
 
 ```
@@ -19,7 +19,7 @@ Error: throw error to showcase source map support.
 
 #### Install dependencies
 - Download [Visual Studio Code 0.8.0](https://code.visualstudio.com/Updates/) or later
-- `node -v` Ensure [node is v4.0.0](https://nodejs.org/en/) or later
+- `node -v` Ensure [node is v4.1.0](https://nodejs.org/en/) or later
 - `npm install .` Install deps defined in package.json
 
 #### Visual Studio Code Integration
@@ -67,7 +67,7 @@ Error: throw error to showcase source map support.
  can't be run anywhere without further processing from babel. The `es6` code is useful for manually comparing the
  babel output and typescript output to understand which parts of ES6 get down leveled to ES5.
 - `lib/await.js` - Output from babel which is generated from the `es6/` files. `lib` is a mix between ES6 and ES5.
- This code runs on node v4.0.0 or better. Source maps allows tracing failures back to line numbers in
+ This code runs on node v4.1.0 or better. Source maps allows tracing failures back to line numbers in
  the origional typescript files.
 - `node_modules` - The dependencies defined in `package.json`
 - `ts/await.ts` - TypeScript source files which are automatically transpiled on save by typescript.
@@ -82,7 +82,7 @@ and other metadata useful when [publishing to npm.](https://www.npmjs.com/)
 
 #### Workflow
 
-- [node v4.0.0](https://nodejs.org/en/blog/release/v4.0.0/) is still missing [many ES6 features](https://nodejs.org/en/docs/es6/)
+- [node v4.1.0](https://nodejs.org/en/blog/release/v4.1.0/) is still missing [many ES6 features](https://nodejs.org/en/docs/es6/)
 
 `node --v8-options | grep "in progress"`
 
@@ -131,7 +131,7 @@ To solve this problem, babel is used to transpile the subset of ES6 unsupported 
 
 #### [babel ES6](http://babeljs.io/docs/advanced/transformers/)
 
-In node v4.0.0
+In node v4.1.0
 
 - es6.arrowFunctions
 - es6.blockScoping
@@ -154,13 +154,13 @@ Not yet in node:
 
 #### [TypeScript ES6 support](https://github.com/Microsoft/TypeScript/wiki/What's-new-in-TypeScript)
 
-- classes - v1.6
-- generators - v1.6
-- async/await - v1.6 (requires flag, only for ES6 output mode.)
-- ES6 modules - v1.5
-- destructuring - v1.5
-- let/const - v1.5
-- for..of support - v1.5
-- decorators - v1.5 (ecmascript 7)
-- computed properties - v1.5
-- template strings - v1.4
+- classes
+- generators
+- async/await (requires flag and TS 1.6+, only for ES6 output mode)
+- ES6 modules
+- destructuring
+- let/const
+- for..of support
+- decorators (ES7)
+- computed properties
+- template strings
