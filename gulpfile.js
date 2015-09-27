@@ -46,7 +46,7 @@ gulp.task('default', function () {
         .pipe(typescript(typescriptProject))
         .pipe(gulp.dest('es6')) // output TS only (before babel) for debugging
         .pipe(babel(babelOptions))
-        .pipe(sourcemaps.write('.'))
+        .pipe(sourcemaps.write('.', { sourceRoot: '../ts' }))
         .pipe(gulp.dest('lib'));
 });
 
