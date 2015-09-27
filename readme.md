@@ -11,10 +11,10 @@ $ node lib/await.js
 2
 3
 Error: throw error to showcase source map support.
-    at /source/await.ts:21:9
+    at /async_await_typescript/ts/await.ts:21:9
     at [object Generator].next (native)
-    at step (/source/await.js:8:41)
-    at onfulfill (/source/await.js:5:43)
+    at step (/async_await_typescript/ts/await.js:8:41)
+    at onfulfill (/async_await_typescript/ts/await.js:5:43)
  ```
 
 #### Install dependencies
