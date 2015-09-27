@@ -41,12 +41,16 @@ var babelOptions = {
 // Compile all ts files with typescript then babel and
 // output the code and sourcemaps to lib/
 gulp.task('default', function () {
+    // For Visual Studio Code source map support lib must contain
+    // both the typescript and the transpiled javascript because
+    // the sourcemaps plugin requires all files at a single source root.
     return gulp.src('ts/**/*.ts')
+        .pipe(gulp.dest('lib'))
         .pipe(sourcemaps.init())
         .pipe(typescript(typescriptProject))
         .pipe(gulp.dest('es6')) // output TS only (before babel) for debugging
         .pipe(babel(babelOptions))
-        .pipe(sourcemaps.write('.', { sourceRoot: '../ts' }))
+        .pipe(sourcemaps.write('.', { sourceRoot: '.' }))
         .pipe(gulp.dest('lib'));
 });
 
