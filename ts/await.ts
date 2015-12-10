@@ -4,8 +4,16 @@ function sleep(milliseconds: number): Promise<void> {
   return new Promise<void>((resolve) => setTimeout(resolve, milliseconds));
 }
 
+/*
+// node.js can't handle the spread operator
+// and typescript doesn't do granular targeting https://github.com/Microsoft/TypeScript/issues/4692
 function puts(...optionalParams: any[]): void {
   console.log.apply(this, arguments);
+}
+*/
+
+function puts(arg:String): void {
+  console.log(arg);
 }
 
 async function sleepOneSecond(): Promise<void> {

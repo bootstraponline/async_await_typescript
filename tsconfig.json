@@ -1,11 +1,11 @@
 {
 	"compilerOptions": {
-		"experimentalAsyncFunctions": true,
 		"inlineSourceMap": true,
 		"inlineSources": true,
 		"noImplicitAny": true,
 		"suppressImplicitAnyIndexErrors": false,
-		"target": "ES6"
+		"target": "ES6",
+		"module": "commonjs"
 	},
 	"filesGlob": [
         "./ts/**/*.ts"

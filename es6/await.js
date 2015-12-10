@@ -11,12 +11,17 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, Promi
         step("next", void 0);
     });
 };
-import 'source-map-support/register';
+require('source-map-support/register');
 function sleep(milliseconds) {
     return new Promise((resolve) => setTimeout(resolve, milliseconds));
 }
-function puts(...optionalParams) {
-    console.log.apply(this, arguments);
+/* // node.js can't handle the spread operator
+function puts(...optionalParams: any[]): void {
+  console.log.apply(this, arguments);
+}
+*/
+function puts(arg) {
+    console.log(arg);
 }
 function sleepOneSecond() {
     return __awaiter(this, void 0, Promise, function* () {

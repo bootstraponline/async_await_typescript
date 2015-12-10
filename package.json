@@ -6,12 +6,10 @@
     "source-map-support": "^0.3.2"
   },
   "devDependencies": {
-    "babel": "^5.8.23",
     "gulp": "^3.9.0",
-    "gulp-babel": "^5.2.1",
-    "gulp-sourcemaps": "^1.5.2",
-    "gulp-typescript": "^2.8.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-typescript": "^2.10.0",
     "gulp-watch": "^4.3.5",
-    "typescript": "^1.6.2"
+    "typescript": "^1.7.3"
   }
 }

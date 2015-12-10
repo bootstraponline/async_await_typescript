@@ -4,8 +4,14 @@ function sleep(milliseconds: number): Promise<void> {
   return new Promise<void>((resolve) => setTimeout(resolve, milliseconds));
 }
 
+/* // node.js can't handle the spread operator
 function puts(...optionalParams: any[]): void {
   console.log.apply(this, arguments);
+}
+*/
+
+function puts(arg:String): void {
+  console.log(arg);
 }
 
 async function sleepOneSecond(): Promise<void> {
