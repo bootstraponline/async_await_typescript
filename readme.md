@@ -40,15 +40,6 @@ Error: throw error to showcase source map support.
 ├── lib
 │   ├── await.js
 │   └── await.js.map
-├── node_modules
-│   ├── babel
-│   ├── gulp
-│   ├── gulp-babel
-│   ├── gulp-sourcemaps
-│   ├── gulp-typescript
-│   ├── gulp-watch
-│   ├── source-map-support
-│   └── typescript
 ├── ts
 │   └── await.ts
 ├── .gitignore
