@@ -81,7 +81,7 @@ and other metadata useful when [publishing to npm.](https://www.npmjs.com/)
 
 #### Workflow
 
-- [node v4.1.0](https://nodejs.org/en/blog/release/v4.1.0/) is still missing [many ES6 features](https://nodejs.org/en/docs/es6/)
+- Node is still missing [many ES6 features](https://nodejs.org/en/docs/es6/).
 
 `node --v8-options | grep "in progress"`
 
