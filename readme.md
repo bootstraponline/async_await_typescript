@@ -16,6 +16,8 @@ Error: throw error to showcase source map support.
     at fulfilled (/async_await_typescript/lib/await.js:4:58)
  ```
 
+ Manually compile using `gulp`. To run tsc directly, use `tsc -p .`
+
 #### Install dependencies
 - Download [Visual Studio Code 1.0](https://code.visualstudio.com/Updates/) or later
 - `node -v` Ensure [node is v6](https://nodejs.org/en/) or later
