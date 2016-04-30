@@ -36,26 +36,28 @@ Error: throw error to showcase source map support.
 ```
 .
 ├── .vscode
+│   ├── launch.json
 │   └── settings.json
 ├── lib
 │   ├── await.js
 │   └── await.js.map
+├── node_modules
 ├── ts
 │   └── await.ts
 ├── .gitignore
 ├── gulpfile.js
 ├── jsconfig.json
-├── notes.md
 ├── package.json
 ├── readme.md
-└── tsconfig.json
+├── tsconfig.json
 ```
 
 - `.vscode/settings.json` - [Settings for Visual Studio Code.](https://code.visualstudio.com/Docs/editor/customization)
 `Code ▸ Preferences ▸ Workspace Settings` to change.
+- `.vscode/launch.json` - [Launch Configuration](https://code.visualstudio.com/Docs/editor/debugging) that enables debugging in Visual Studio code.
 - `lib/await.js` - Output from TypeScript. `lib` is a mix between ES6 and ES5.
- This code runs on node v6 or better. Source maps allows tracing failures back to line numbers in
- the origional typescript files.
+ This code runs on node v6 or better. 
+- `lib/await.js.map` - Source maps allows tracing failures back to line numbers in the original typescript files.
 - `node_modules` - The dependencies defined in `package.json`
 - `ts/await.ts` - TypeScript source files which are automatically transpiled on save by typescript.
 - `.gitignore` - Standard [git ignore file](http://git-scm.com/docs/gitignore).
