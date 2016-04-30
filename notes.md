@@ -17,7 +17,7 @@ https://github.com/Microsoft/TypeScriptSamples/tree/master/async
 
 --
 
-``javascript
+```javascript
 /**
 	 * If you call resolve in the body of the callback passed to the constructor,
 	 * your promise is fulfilled with result object passed to resolve.
