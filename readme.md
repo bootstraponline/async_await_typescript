@@ -81,6 +81,12 @@ As a result module type `commonjs` is used in tsconfig.json.
 
 TypeScript offers granular targeting via the [lib compiler option](https://github.com/Microsoft/TypeScript/blob/f0e2d817cad9f311fc692437d3bb5dadfa6c1e5d/src/compiler/commandLineParser.ts#L367) specified in tsconfig..
 
+#### Debugging
+
+Visual Studio Code supports debugging TypeScript with source map support.
+
+![](visual_studio_code_debugging.png)
+
 #### Credits
 
 - Thanks to [@ivogabe](https://github.com/ivogabe) for blogging about [using typescript with babel](http://dev.ivogabe.com/combine-typescript-with-babel/)
