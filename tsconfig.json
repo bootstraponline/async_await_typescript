@@ -12,10 +12,8 @@
 		// https://github.com/Microsoft/TypeScript/pull/7715
 		// "lib": ["es7", "es6"]
 	},
-	"filesGlob": [
-        "./ts/**/*.ts"
-    ],
-	"exclude": [
-        "node_modules"
-	]
+	// filesGlob is only supported by atom-typescript
+	"files": [
+		"ts/await.ts"
+    ]
 }
