@@ -2,7 +2,8 @@
 
 var gulp = require('gulp'),
     typescript = require('gulp-typescript'),
-    sourcemaps = require('gulp-sourcemaps');
+    sourcemaps = require('gulp-sourcemaps'),
+    path = require('path');
 
 // ts/*.ts -> es6 (virtual) -> lib/*.js
 
@@ -18,10 +19,9 @@ gulp.task('default', function () {
     // both the typescript and the transpiled javascript because
     // the sourcemaps plugin requires all files at a single source root.
     return gulp.src('ts/**/*.ts')
-        .pipe(gulp.dest('lib'))
         .pipe(sourcemaps.init())
         .pipe(typescript(typescriptProject))
-        .pipe(sourcemaps.write('.', { sourceRoot: '.' }))
+        .pipe(sourcemaps.write('.', { sourceRoot: path.relative('lib', 'ts'), includeContent: false }))
         .pipe(gulp.dest('lib'));
 });
 
