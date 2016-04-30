@@ -3,15 +3,13 @@
     "lib": "lib"
   },
   "dependencies": {
-    "source-map-support": "^0.3.2"
+    "source-map-support": "^0.4.0"
   },
   "devDependencies": {
-    "babel": "^5.8.23",
-    "gulp": "^3.9.0",
-    "gulp-babel": "^5.2.1",
-    "gulp-sourcemaps": "^1.5.2",
-    "gulp-typescript": "^2.8.2",
+    "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^2.0.0-alpha",
+    "gulp-typescript": "^2.13.0",
     "gulp-watch": "^4.3.5",
-    "typescript": "^1.6.2"
+    "typescript": "1.9.0-dev.20160429"
   }
 }

@@ -1,5 +1,15 @@
 # Random notes about ES6 and TypeScript
 
+todo:
+
+- Gulp file from MS sample is better
+https://github.com/Microsoft/TypeScriptSamples/tree/master/async
+- http://blogs.msdn.com/b/typescript/archive/2015/11/30/announcing-typescript-1-7.aspx
+- http://blogs.msdn.com/b/typescript/archive/2015/11/03/what-about-async-await.aspx
+- https://code.visualstudio.com/updates
+
+
+
 - Must run `tsc` to see `tsconfig.json` errors because gulp will not bubble them up.
 - ES6 uses import instead of require.
 - Target node v4.0.0 or better which supports generators natively.
