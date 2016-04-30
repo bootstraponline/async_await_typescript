@@ -1,9 +1,9 @@
 # async/await with TypeScript
 
 This example demonstrates the use of [async/await](https://github.com/lukehoban/ecmascript-asyncawait)
-using [TypeScript v1.6](http://blogs.msdn.com/b/typescript/archive/2015/09/02/announcing-typescript-1-6-beta-react-jsx-better-error-checking-and-more.aspx),
-[Babel](http://babeljs.io/), [Node.js v4](https://nodejs.org/en/blog/release/v4.0.0/)
-and [Visual Studio Code v0.8.0](https://code.visualstudio.com/);
+using TypeScript v1.9-dev,
+Node.js v6
+and [Visual Studio Code v1.0](https://code.visualstudio.com/);
 
 ```
 $ node lib/await.js
@@ -18,8 +18,8 @@ Error: throw error to showcase source map support.
  ```
 
 #### Install dependencies
-- Download [Visual Studio Code 0.8.0](https://code.visualstudio.com/Updates/) or later
-- `node -v` Ensure [node is v4.1.0](https://nodejs.org/en/) or later
+- Download [Visual Studio Code 1.0](https://code.visualstudio.com/Updates/) or later
+- `node -v` Ensure [node is v6](https://nodejs.org/en/) or later
 - `npm install .` Install deps defined in package.json
 
 #### Visual Studio Code Integration
@@ -87,80 +87,14 @@ and other metadata useful when [publishing to npm.](https://www.npmjs.com/)
 `node --v8-options | grep "in progress"`
 
 Node lacks support [for ES6 modules](https://github.com/nodejs/node/issues/2760#issuecomment-138858677) because [v8 hasn't implemented them](https://code.google.com/p/v8/issues/detail?id=1569)
-As a result [babel is required](http://babeljs.io/) to run on node.js. The version of v8 used by node can be found by running `node -p process.versions.v8`
+As a result module type `commonjs` is used in tsconfig.json.
 
 - **typescript** Transpiles ES 7 to ES 6
-- **babel** Transforms unsupported ES 6 into ES 5
 - **node.js** Runs ES 6/5 hybrid
 
-TypeScript lacks [granular targeting](https://github.com/Microsoft/TypeScript/issues/4692) meaning the JavaScript target is
-all or nothing. Compiling to ES6 will use all ES6 features even if some (ex: modules) are not supported by node. Unfortunately
-there's currently no browser or version of v8 that fully implements ES6. The ES6 code emitted by typescript can't be run anywhere.
-To solve this problem, babel is used to transpile the subset of ES6 unsupported by node to ES5 which is supported.
+TypeScript offers granular targeting via the [lib compiler option](https://github.com/Microsoft/TypeScript/blob/f0e2d817cad9f311fc692437d3bb5dadfa6c1e5d/src/compiler/commandLineParser.ts#L367) specified in tsconfig..
 
 #### Credits
 
 - Thanks to [@ivogabe](https://github.com/ivogabe) for blogging about [using typescript with babel](http://dev.ivogabe.com/combine-typescript-with-babel/)
 - Thanks to [@Deathspike](https://github.com/Deathspike) for posting an [async example](https://github.com/Microsoft/TypeScript/issues/1664#issuecomment-129745146)
-
---
-
-#### ES6 Support Summary (as of Sep 2015)
-
-[Default node v4 features](https://nodejs.org/en/docs/es6/)
-
-- Block scoping
-  - let
-  - const
-  - function-in-blocks
-- Classes (strict mode only)
-- Collections
-  - Map
-  - WeakMap
-  - Set
-  - WeakSet
-- Typed arrays
-- Generators
-- Binary and Octal literals
-- Object literal extensions (shorthand properties and methods)
-- Promises
-- New String methods
-- Symbols
-- Template strings
-- Arrow Functions
-
-#### [babel ES6](http://babeljs.io/docs/advanced/transformers/)
-
-In node v4.1.0
-
-- es6.arrowFunctions
-- es6.blockScoping
-- es6.classes
-- es6.constants
-
-Not yet in node:
-
-- es6.destructuring
-- es6.forOf
-- es6.modules
-- es6.parameters
-- es6.properties.computed
-- es6.properties.shorthand
-- es6.spread
-- es6.tailCall
-- es6.templateLiterals
-- es6.regex.unicode
-- es6.regex.sticky
-
-#### [TypeScript ES6 support](https://github.com/Microsoft/TypeScript/wiki/What's-new-in-TypeScript)
-
-- classes
-- generators
-- async/await (requires flag and TS 1.6+, only for ES6 output mode)
-- ES6 modules
-- destructuring
-- let/const
-- for..of support
-- decorators (ES7)
-- computed properties
-- template strings

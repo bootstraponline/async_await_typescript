@@ -7,7 +7,7 @@ var gulp = require('gulp'),
 // ts/*.ts -> es6 (virtual) -> lib/*.js
 
 var typescriptProject = typescript.createProject("./tsconfig.json", {
-    // use typescript 1.6.0-beta instead of bundled typescript 1.5.
+    // use typescript 1.9.0-dev.20160429 instead of bundled typescript.
     typescript: require('typescript')
 });
 

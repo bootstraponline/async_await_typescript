@@ -4,8 +4,13 @@
 		"inlineSources": true,
 		"noImplicitAny": true,
 		"suppressImplicitAnyIndexErrors": false,
-		"target": "ES6",
-		"module": "commonjs"
+		"target": "es6",
+		// node doesn't understand es6 modules 
+		// 'Unexpected token import'
+		"module": "commonjs" //,
+		// --lib support in typescript@next
+		// https://github.com/Microsoft/TypeScript/pull/7715
+		// "lib": ["es7", "es6"]
 	},
 	"filesGlob": [
         "./ts/**/*.ts"
