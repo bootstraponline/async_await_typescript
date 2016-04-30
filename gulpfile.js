@@ -21,7 +21,6 @@ gulp.task('default', function () {
         .pipe(gulp.dest('lib'))
         .pipe(sourcemaps.init())
         .pipe(typescript(typescriptProject))
-        .pipe(gulp.dest('es6')) // output TS only for debugging
         .pipe(sourcemaps.write('.', { sourceRoot: '.' }))
         .pipe(gulp.dest('lib'));
 });

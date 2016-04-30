@@ -37,8 +37,6 @@ Error: throw error to showcase source map support.
 .
 ├── .vscode
 │   └── settings.json
-├── es6
-│   └── await.js
 ├── lib
 │   ├── await.js
 │   └── await.js.map
@@ -55,11 +53,8 @@ Error: throw error to showcase source map support.
 
 - `.vscode/settings.json` - [Settings for Visual Studio Code.](https://code.visualstudio.com/Docs/editor/customization)
 `Code ▸ Preferences ▸ Workspace Settings` to change.
-- `es6/await.js` - Output from TypeScript `await.ts` No browser or node version fully supports ES6 so this code
- can't be run anywhere without further processing from babel. The `es6` code is useful for manually comparing the
- babel output and typescript output to understand which parts of ES6 get down leveled to ES5.
-- `lib/await.js` - Output from babel which is generated from the `es6/` files. `lib` is a mix between ES6 and ES5.
- This code runs on node v4.1.0 or better. Source maps allows tracing failures back to line numbers in
+- `lib/await.js` - Output from TypeScript. `lib` is a mix between ES6 and ES5.
+ This code runs on node v6 or better. Source maps allows tracing failures back to line numbers in
  the origional typescript files.
 - `node_modules` - The dependencies defined in `package.json`
 - `ts/await.ts` - TypeScript source files which are automatically transpiled on save by typescript.
