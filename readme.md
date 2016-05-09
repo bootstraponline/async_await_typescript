@@ -81,7 +81,7 @@ As a result module type `commonjs` is used in tsconfig.json.
 - **typescript** Transpiles ES 7 to ES 6
 - **node.js** Runs ES 6/5 hybrid
 
-TypeScript offers granular targeting via the [lib compiler option](https://github.com/Microsoft/TypeScript/blob/f0e2d817cad9f311fc692437d3bb5dadfa6c1e5d/src/compiler/commandLineParser.ts#L367) specified in tsconfig..
+TypeScript offers granular targeting via the [lib compiler option](https://github.com/Microsoft/TypeScript/blob/f0e2d817cad9f311fc692437d3bb5dadfa6c1e5d/src/compiler/commandLineParser.ts#L367) specified in tsconfig.
 
 #### Debugging
 
